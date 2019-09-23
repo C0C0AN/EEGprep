@@ -24,6 +24,9 @@ EEGprep
     :alt: License
     :target: https://opensource.org/licenses/BSD-3-Clause
 
+.. image:: https://img.shields.io/docker/cloud/automated/peerherholz/eegprep
+    :alt: Docker
+    :target: https://cloud.docker.com/u/peerherholz/repository/docker/peerherholz/eegprep
 
 A BIDSapp for automated preprocessing of EEG data.
 
