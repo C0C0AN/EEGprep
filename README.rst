@@ -8,6 +8,10 @@ EEGprep
 .. image:: https://img.shields.io/pypi/v/eegprep.svg
         :target: https://pypi.python.org/pypi/eegprep
 
+.. image:: https://upload.wikimedia.org/wikipedia/commons/7/74/Zotero_logo.svg
+    :alt: Zotero
+    :target: https://www.zotero.org/groups/2385121/eegprep
+
 
 A BIDSapp for automated preprocessing of EEG data.
 
