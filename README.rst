@@ -8,6 +8,11 @@ EEGprep
 .. image:: https://img.shields.io/pypi/v/eegprep.svg
         :target: https://pypi.python.org/pypi/eegprep
 
+<<<<<<< HEAD
+.. image:: https://upload.wikimedia.org/wikipedia/commons/7/74/Zotero_logo.svg
+    :alt: Zotero
+    :target: https://www.zotero.org/groups/2385121/eegprep
+=======
 .. image:: https://img.shields.io/github/contributors/C0C0AN/EEGprep.svg
     :alt: Contributors
     :target: https://GitHub.com/C0C0AN/EEGprep/graphs/contributors/
@@ -23,6 +28,7 @@ EEGprep
 .. image:: https://img.shields.io/badge/License-BSD%203--Clause-blue.svg
     :alt: License
     :target: https://opensource.org/licenses/BSD-3-Clause
+>>>>>>> master
 
 .. image:: https://img.shields.io/docker/cloud/automated/peerherholz/eegprep
     :alt: Dockerbuild
