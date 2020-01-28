@@ -39,7 +39,7 @@ EEGprep
     :target: https://cloud.docker.com/u/peerherholz/repository/docker/peerherholz/eegprep
     
 
-A BIDSapp for automated preprocessing of EEG data.
+A BIDS App for automated preprocessing of EEG data.
 
 * Free software: 3-clause BSD license
 * Documentation: (COMING SOON!) https://peerherholz.github.io/eegprep.
