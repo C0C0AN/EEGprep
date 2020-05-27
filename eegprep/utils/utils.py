@@ -1,4 +1,8 @@
+import os
+import warnings
+import re
 
+import numpy as np
 
 
 def validate_sourcedata(path, source_type, pattern='sub-\\d+'):
