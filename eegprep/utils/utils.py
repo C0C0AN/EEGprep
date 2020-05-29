@@ -8,7 +8,7 @@ import numpy as np
 def validate_sourcedata(path, source_type, pattern='sub-\\d+'):
     """
     This function validates the "sourcedata/" directory provided by user to
-    see if it's contents are consistent with BIDS.
+    see if it's contents are consistent with the pipeline's requirements.
     """
 
     if not path:
@@ -53,7 +53,7 @@ def validate_sourcedata(path, source_type, pattern='sub-\\d+'):
                 bad_names = np.where(np.logical_not(valid_names))[0]
                 bad_names = [sub_dirs[bn] for bn in bad_names]
 
-                warnings.warn('The directory names in "sourcedata/" are not BIDS conform.')  # noqa: E501
+                warnings.warn('The subject directory names in "sourcedata/" are inconsistent.')  # noqa: E501
                 subject_names = 'error in %s' \
                                 % (', '.join([str(bn) for bn in bad_names]))
             else:
@@ -64,7 +64,7 @@ def validate_sourcedata(path, source_type, pattern='sub-\\d+'):
                               if data_dir in source_type])
             n_dirs = [len(d) for d in data_dirs]
             if len(set(n_dirs)) > 1:
-                warnings.warn('Subject directories contain different number of subdirectories.')  # noqa: E501
+                warnings.warn("Subject directories contain different number of data directories.")  # noqa: E501
                 modal = max(set(n_dirs), key=n_dirs.count)
 
                 inconscistent = [i for i, n in enumerate(n_dirs)
@@ -91,7 +91,7 @@ def validate_sourcedata(path, source_type, pattern='sub-\\d+'):
                 bad_files = np.where(np.logical_not(valid_file_names))[0]
                 bad_files = [data_files[bf] for bf in bad_files]
 
-                warnings.warn('Some file names are not BIDS conform.')
+                warnings.warn("Some file names are not named accordance to the pipeline's requirements.")
                 file_names = 'error in %s' % (', '.join([str(bn)
                                                          for bn in bad_files]))
             else:
